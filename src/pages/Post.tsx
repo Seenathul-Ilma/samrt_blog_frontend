@@ -46,7 +46,8 @@ export default function Post() {
 
       if (image) formData.append("image", image);
 
-      const res = await createPost(formData);
+      //const res = await createPost(formData);
+      await createPost(formData);    // remove unused variables and imports
 
       await fetchData(1);
     } catch (err) {
